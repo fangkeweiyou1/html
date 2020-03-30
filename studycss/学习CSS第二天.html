@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        /*子元素选择器 : >,只选择最近的那个,否则所有子孙都被选择了*/
+        div > strong {
+            color: pink;
+        }
+
+        /*又是p标签又是class.bottom标签,交集标签*/
+        div p.bottom {
+            color: red
+        }
+
+        /*并集选择器 以,号为准*/
+        del, em {
+            color: green;
+        }
+
+        /*伪类选择器*/
+        a {
+            text-decoration: none;
+        }
+
+     /*   !*未访问*!
+        a :link {
+            color: red;
+        }
+
+        !*访问*!
+        a:visited {
+            color: pink;
+        }
+
+        !*鼠标放上去*!
+        a:hover {
+            color: green;
+        }
+
+        !*鼠标点击的链接*!
+        a:active {
+            color: gray;
+        }*/
+        .w300{
+            width: 100px;
+            display: inline-block;
+            height: 30px;
+            background-color: pink;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            margin: 0px 10px 0px 0px;
+            line-height: 30px;
+        }
+        .w300:hover{
+            background-color: orange;
+            color: yellow;
+        }
+    </style>
+    <title>学习CSS第二天</title>
+</head>
+<body>
+
+<a class="w300" href="学习CSS.html">新闻</a><a class="w300" href="学习CSS.html">体育</a><a class="w300" href="学习CSS.html">汽车</a>
+
+<div>
+    <div>
+        <strong>床前明月光</strong>
+        <strong>疑是地上霜</strong>
+        <strong>举头望明月</strong>
+        <p class="bottom">
+            <strong>床前明月光</strong>
+            <strong>疑是地上霜</strong>
+            <strong>举头望明月</strong>
+        </p>
+    </div>
+    <del>床前明月光</del>
+    <em>疑是地上霜</em>
+    <a href="学习CSS.html" target="_blank">伪类选择器</a>
+</div>
+<div>
+    标签的三种显示模式
+    <!--TODO 块级元素,block,默认宽是父容器的100%-->
+    <div></div>
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <ul>
+        <li></li>
+    </ul>
+    <!--TODO 行级元素,不能设置宽高 inline-->
+    <span></span>
+    <a href="学习CSS.html"></a>
+    <strong></strong>
+    <em></em>
+    <del></del>
+    <s></s>
+    <i></i>
+    <!--todo 行内块级元素 inline-block,可以设置宽高,默认内容宽高-->
+    <img src="../img2.jpeg">
+    <!--todo 行内元素转块级元素-->
+    <span style="display: block;width: 200px;background-color: red">行内元素转块级元素</span>
+    <!--todo 块级转行内标签-->
+    <!--todo 块级转行内块标签-->
+</div>
+
+</body>
+</html>
