@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../css/index.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        .top{
+            position: relative;
+            top: 0px;
+            left: 0px;
+            height: 200px;
+            background-color: pink;
+        }
+        .bottom{
+            height: 200px;
+            background-color: green;
+        }
+        .left,.right,.middle{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+        .left{
+            position: absolute;
+            top: 75px;
+            /*官大一级压死人,和绝对定位配合*/
+            z-index: 2;
+        }
+        .right{
+            position: absolute;
+            top: 75px;
+            right: 0px;
+        }
+        .middle{
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            margin-left: -25px;
+        }
+    </style>
+    <title>绝对定位2</title>
+</head>
+<body>
+<div class="top">
+    <div class="left">
+
+    </div>
+    <div class="right">
+
+    </div>
+    <div class="middle">
+
+    </div>
+
+</div>
+<div class="bottom">
+
+</div>
+
+</body>
+</html>

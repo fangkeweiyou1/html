@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>复习盒子</title>
+</head>
+<body>
+<!--
+块级元素中的p,h1,dt标签内不能再放块级标签
+-->
+<!--div 一行只能放一个 块级元素-->
+    <div>床前明月光</div>
+    <div>疑是地上霜</div>
+    <div>举头望明月</div>
+    <div>低头思故乡</div>
+<!--span一行放多个,行内元素,不能设置宽高-->
+<div style="width: 200px;">
+    <span>床前明月光</span>
+    <span>疑是地上霜</span>
+    <span>举头望明月</span>
+    <span>低头思故乡</span>
+</div>
+<!--
+行内块元素,一行放多个,可以设置宽高
+input,img,textarea,,
+-->
+<div>
+<input type="text" value="行内块元素">
+<input type="text" value="行内块元素">
+</div>
+
+<div style="margin-top: 100px">
+    <a href="#" style="display: inline-block;width: 100px;height: 100px;background-color: pink;line-height: 100px;text-align: center">新闻</a>
+    <a href="#" style="display: inline-block;width: 100px;height: 100px;background-color: pink;line-height: 100px;text-align: center">体育</a>
+    <a href="#" style="display: inline-block;width: 100px;height: 100px;background-color: pink;line-height: 100px;text-align: center">汽车</a>
+
+</div>
+<!--todo 可以overflow: hidden解决-->
+<div class="taxian_father" style="width: 200px;height: 200px;background-color: pink;margin-top: 50px;overflow: hidden">
+    <div class="taxian_son" style="width: 100px;height: 100px;background-color: green;margin-top: 20px">
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+@charset "utf-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.wrap1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #f3f5f7;
+}
+.header-content{
+    height: 42px;
+    line-height: 42px;
+    margin: 30px auto;
+    background-color: pink;
+}
+.header-content img{
+    width: 195px;
+    height: 42px;
+    float: left;
+    margin-right: 60px;
+}
+.header-content ul{
+    float: left;
+
+}
+.header-content li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 20px;
+    padding: 0px 20px;
+}
+.header-content li a{
+    color: black;
+    display: block;
+}
+.header-content li a:hover{
+    color: #00a4ff;
+    border-bottom: 1px solid #00a4ff;
+}
+.search{
+    float: left;
+}
+.search input{
+    float: left;
+    height: 40px;
+    width: 160px;
+    padding-left: 20px;
+    color: gray;
+    border: 1px solid #00a4ff;
+}
+.search button{
+    float: left;
+    height: 42px;
+    width: 50px;
+    background: url("../images/ic_xue_search.png");
+}
+.user{
+    float: right;
+    height: 42px;
+}

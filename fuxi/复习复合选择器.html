@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        /*后代选择器 中间空格*/
+        .houdai a {
+
+        }
+
+        /*子元素选择器,只选择儿子*/
+        div > strong {
+
+        }
+
+        /*交集选择器,既是div,又是red,不建议使用*/
+        div.red {
+
+        }
+
+        /*并集选择器*/
+        .yellow, .pink {
+
+        }
+
+        /*   !*未访问*!
+       a :link {
+           color: red;
+       }
+
+       !*访问*!
+       a:visited {
+           color: pink;
+       }
+
+       !*鼠标放上去*!
+       a:hover {
+           color: green;
+       }
+
+       !*鼠标点击的链接*!
+       a:active {
+           color: gray;
+       }*/
+        /*伪类选择器*/
+        a:hover {
+
+        }
+        /*边框的3个属性*/
+        .border{
+            border: 1px solid red;
+            /*border-width: 1px;*/
+            /*border-color: red;*/
+            /*border-style: dotted;*/
+        }
+    </style>
+    <title>复习复合选择器</title>
+</head>
+<body>
+
+<div class="houdai">
+    <a href="#"></a>
+</div>
+
+<div class="ziyuansu">
+    <strong>儿子</strong>
+    <ul>
+        <li><strong>重孙</strong></li>
+    </ul>
+</div>
+<div class="jiaoji">
+    <div class="red"></div>
+    <div class="blue"></div>
+</div>
+<div class="bingji">
+    <div class="yellow"></div>
+    <div class="pink"></div>
+</div>
+<div class="border">
+
+</div>
+</body>
+</html>

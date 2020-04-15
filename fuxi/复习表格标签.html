@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>复习表格标签</title>
+</head>
+<body>
+
+<!--border边框宽度-->
+<!--align表格对其方式-->
+<!--cellspacing单元格之间的角力-->
+<!--cellpadding单元格内间距-->
+<table border="1" width="400" align="center" cellspacing="20" cellpadding="30">
+    <caption>表的标题</caption>
+    <tr>
+        <!--th表头居中加粗-->
+        <th>姓名</th>
+        <th>性别</th>
+    </tr>
+    <tr>
+        <td>姓名</td>
+        <td>性别</td>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>男</td>
+    </tr>
+</table>
+
+<!--todo border-collapse: collapse 单元格之间的线合并-->
+<table border="1" cellspacing="0" style="border-collapse: collapse">
+    <caption>小说排行榜</caption>
+    <tr>
+        <th>排名</th>
+        <th>关键词</th>
+        <th>趋势</th>
+        <th>今日搜索</th>
+        <th>最近七日</th>
+        <th>相关链接</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>鬼吹灯</td>
+        <td>↓</td>
+        <td>345</td>
+        <td>123</td>
+        <td>
+            <a href="#">贴吧</a>
+            <a href="#">贴吧</a>
+            <a href="#">贴吧</a>
+        </td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>鬼吹灯</td>
+        <td>↓</td>
+        <td>345</td>
+        <td>123</td>
+        <td>
+            <a href="#">贴吧</a>
+            <a href="#">贴吧</a>
+            <a href="#">贴吧</a>
+        </td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>鬼吹灯</td>
+        <td>↓</td>
+        <td>345</td>
+        <td>123</td>
+        <td>
+            <a href="#">贴吧</a>
+            <a href="#">贴吧</a>
+            <a href="#">贴吧</a>
+        </td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>鬼吹灯</td>
+        <td>↓</td>
+        <td>345</td>
+        <td>123</td>
+        <td>
+            <a href="#">贴吧</a>
+            <a href="#">贴吧</a>
+            <a href="#">贴吧</a>
+        </td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>鬼吹灯</td>
+        <td>↓</td>
+        <td>345</td>
+        <td>123</td>
+        <td>
+            <a href="#">贴吧</a>
+            <a href="#">贴吧</a>
+            <a href="#">贴吧</a>
+        </td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>鬼吹灯</td>
+        <td rowspan="2">↓</td>
+        <td colspan="2">345</td>
+        <!--<td>123</td>-->
+        <td>
+            <a href="#">贴吧</a>
+            <a href="#">贴吧</a>
+            <a href="#">贴吧</a>
+        </td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>鬼吹灯</td>
+        <!--<td >↓</td>-->
+        <td>345</td>
+        <td>123</td>
+        <td>
+            <a href="#">贴吧</a>
+            <a href="#">贴吧</a>
+            <a href="#">贴吧</a>
+        </td>
+    </tr>
+</table>
+
+<!--无序列表-->
+<ul>
+    <li>床前明月光</li>
+    <li>疑是地上霜</li>
+    <li>举头望明月</li>
+    <li>低头思故乡</li>
+</ul>
+<!--有序列表-->
+<ol>
+    <li>床前明月光</li>
+    <li>疑是地上霜</li>
+    <li>举头望明月</li>
+    <li>低头思故乡</li>
+</ol>
+<!--自定义列表-->
+<dl>
+    <dt>床前明月光</dt>
+    <dd>床前明月光</dd>
+    <dd>床前明月光</dd>
+    <dd>床前明月光</dd>
+    <li>床前明月光</li>
+    <li>疑是地上霜</li>
+    <li>举头望明月</li>
+    <li>低头思故乡</li>
+</dl>
+
+<form action="#" method="post" name="login">
+
+    <label for="username">username: </label><input id="username" name="username" value="" type="text"/><br/>
+    password: <input name="password" value="" type="password"/><br/>
+    sex: <label>男<input name="sex" value="sex" type="radio"/></label> <label>女<input name="sex" value="sex" type="radio"/></label><br/>
+    fav:<label>篮球 <input type="checkbox" name="fav"></label><label>足球 <input type="checkbox" name="fav"></label><br/>
+    <textarea></textarea><br/>
+    <select>
+        <option>--请选择国家--</option>
+        <option>中国</option>
+        <option>美国</option>
+    </select><br/>
+    <input type="file"><br/>
+    <input type="submit"><br/>
+    <input type="reset"><br/>
+    <input type="image" src="../images/ic_xue_logo.png"><br/>
+</form>
+
+</body>
+</html>

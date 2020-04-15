@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1
+        }
+        .content {
+            /*第一种清除浮动*/
+            /*overflow: hidden;*/
+            /*第二种在上面*/
+        }
+        .one, .two, .three {
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+
+        .one {
+            background-color: pink;
+        }
+
+        .two {
+            background-color: green;
+        }
+
+        .three {
+            background-color: red;
+        }
+        .four{
+            width: 250px;
+            height: 250px;
+            background-color: yellow;
+        }
+    </style>
+    <title>复习浮动</title>
+</head>
+<body>
+
+<div class="content clearfix">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</div>
+<div class="four">
+
+</div>
+</body>
+</html>

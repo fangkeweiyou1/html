@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../css/index.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        .yeye{
+            /*width: 500px;*/
+            /*height: 500px;*/
+            background-color: red;
+        }
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            /*标准流的盒子总是以父准移动位置*/
+            margin: 100px;
+            /*position: absolute;*/
+            /*top: 0px;*/
+            /*left: 0px;*/
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            /*position: absolute;*/
+            /*top: 50px;*/
+            /*left: 50px;*/
+        }
+
+    </style>
+    <title>绝对定位</title>
+    <!--不保留位置-->
+</head>
+<body>
+<div class="yeye">
+    <div class="father">
+        <div class="son">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

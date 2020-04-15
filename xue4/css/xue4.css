@@ -1,0 +1,170 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1
+}
+body{
+    background-color: #f3f5f7;
+}
+.wrap1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 42px;
+    margin: 30px auto;
+    background-color: pink;
+}
+.logo{
+    float: left;
+    margin-right: 60px;
+}
+.header-nav{
+    float: left;
+}
+.header-nav li{
+    float: left;
+}
+.header-nav li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 20px;
+    padding: 0px 15px;
+    color: black;
+    font-size: 18px;
+}
+.header-nav li a:hover{
+    color: #00a4ff;
+    border-bottom: 1px solid #00a4ff;
+}
+.header-search{
+    float: left;
+    margin-left: 70px;
+}
+.header-search input{
+    float: left;
+    width: 320px;
+    height: 40px;
+    padding-left: 20px;
+    color: gray;
+    border:  1px solid #00a4ff;
+    border-right: 0;
+}
+.header-search button{
+    float: left;
+    height: 42px;
+    width: 50px;
+    background: url("../images/ic_xue_search.png");
+}
+.head-user{
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    margin-left: 30px;
+}
+
+/**/
+/**/
+/**/
+.banner-vessel{
+    height: 420px;
+    background-color: blue;
+}
+.banner-content{
+    height: 420px;
+    background: url("../images/img_xue_banner.png") no-repeat;
+}
+.banner-nav{
+    float: left;
+    width: 150px;
+    height: 420px;
+    padding: 0px 20px;
+    background-color: rgba(0,0,0,.2);
+}
+.banner-nav li{
+    height: 42px;
+    line-height: 42px;
+}
+.banner-nav li a{
+    float: left;
+    color: white;
+    font-size: 14px;
+}
+.banner-nav li a:hover{
+    color: #00a4ff;
+}
+.banner-nav li span{
+    float: right;
+    color: white;
+}
+.banner-course{
+    float: right;
+    width: 228px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: white;
+}
+.course-hd{
+    height: 48px;
+    line-height: 48px;
+    background-color: #00a4ff;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+.course-bd{
+    padding: 0px 20px;
+}
+.course-bd ul {
+    padding-top: 10px;
+}
+.course-bd li{
+    height: 50px;
+    margin-top: 10px;
+    border-bottom: 1px solid #00a4ff;
+}
+.course-bd a{
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #00a4ff;
+}
+
+/**/
+/**/
+/**/
+.goods{
+    height: 60px;
+    background-color: pink;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        .content{
+            color: white;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto;
+            background-color: red;
+        }
+        /*todo :after表示伪元素  ::after表示伪类*/
+        .content::before{
+            content: "之前插入内容";
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: green;
+        }
+        .content::after{
+            content: "之后插入内容";
+        }
+    </style>
+    <title>after选择器</title>
+</head>
+<body>
+    <div class="content">
+        <p>这里是原本内容</p>
+    </div>
+</body>
+</html>
