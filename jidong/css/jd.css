@@ -95,7 +95,7 @@ body {
     display: block;
     width: 20px;
     height: 18px;
-    background: url("../images/menu.png") no-repeat;
+    /*background: url("../images/menu.png") no-repeat;*/
     background-size: 20px 18px;
     margin: 14px 0 0 15px;
 }
@@ -125,7 +125,7 @@ body {
     position: absolute;
     top: 8px;
     left: 13px;
-    background:url("../images/jd_logo.png") no-repeat;
+    /*background:url("../images/jd_logo.png") no-repeat;*/
     background-size: 20px 14px;
 }
 .jd_icon::after{
