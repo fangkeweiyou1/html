@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        div {
+            margin-top: 2px;
+        }
+
+        body {
+            width: 600px;
+            margin: 0 auto;
+            background-color: #f3f5f7;
+            border: 1px solid red;
+        }
+
+        .item1 {
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .item1 span {
+            flex: 1;
+        }
+
+        .item1 span:nth-child(1) {
+            background-color: red;
+        }
+
+        .item1 span:nth-child(2) {
+            background-color: transparent;
+        }
+
+        .item1 span:nth-child(3) {
+            background-color: blue;
+        }
+
+        .item1_child2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item1_child2 div {
+            width: 100%;
+        }
+
+        .item1_child2 div:nth-child(1) {
+            background-color: orange;
+        }
+
+        .item1_child2 div:nth-child(2) {
+            background-color: yellow;
+        }
+
+        .item1_child3 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item1_child3 div {
+            width: 100%;
+        }
+
+        .item1_child3 div:nth-child(1) {
+            background-color: green;
+        }
+
+        .item1_child3 div:nth-child(2) {
+            background-color: purple;
+        }
+    </style>
+    <title>flex第二讲</title>
+</head>
+<body>
+<div class="item1">
+    <span>1</span>
+    <span class="item1_child2">
+            <div>2-1</div>
+            <div>2-2</div>
+        </span>
+    <span class="item1_child3">
+             <div>3-1</div>
+            <div>3-2</div>
+        </span>
+
+</div>
+</body>
+</html>

@@ -16,7 +16,7 @@ body {
     max-width: 640px;
     min-width: 320px;
     margin: 0 auto;
-    background-color: white;
+    background-color: red;
     font-size: 14px;
     font-family: "微软雅黑", "Microsoft YaHei", "宋体", Calibri, Arial, Helvetica, sans-serif;
 }
@@ -42,6 +42,7 @@ body {
 .app ul li:nth-child(1) {
     width: 8%;
     text-align: center;
+    background-color: green;
 }
 
 .app ul li:nth-child(1) img {

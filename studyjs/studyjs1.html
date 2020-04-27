@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        //        var hangSum = 10
+        //        console.log(hangSum+"*"+hangSum)
+        //        for (var hang = 1; hang <= hangSum; hang++) {
+        //            var str = ""
+        //            for (var lie = 1; lie <= hang; lie++) {
+        //                str = str + (hang + "*" + lie + "=" + (hang * lie)+" ")
+        //            }
+        //            console.log(str)
+        //        }
+        var arr = new Array(1, 2, 3)
+        sum(arr)
+
+        function sum() {
+            console.log(arguments)
+        }
+
+        var person = {
+            name :"张三",
+            age :10
+        }
+        console.log(person.name)
+
+        var woman=new Object();
+        woman.gender="女"
+        console.log(woman.gender)
+
+        function Man() {
+            this.name="liming"
+            this.age=1
+            this.bookNum=3
+        }
+        var man=new Man()
+        console.log(man.bookNum)
+       for(var k in man)
+       {
+           console.log(k)
+       }
+       var a=10
+        var b =11
+        console.log(Math.max(a,b))
+        var  date=new Date()
+        console.log("当前日期:"+date)
+        console.log("当前举例1970年多少毫秒:"+Date.now())
+    </script>
+</head>
+<body>
+
+<div id="timer">
+    2019-09-09
+</div>
+<script>
+    var timber=document.getElementById("timer")
+    console.log(timber)
+</script>
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+}
+
+.wrap1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+/**/
+/**/
+/**/
+/**/
+.header {
+    display: flex;
+    height: 42px;
+    margin: 30px auto;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.header_left, header_right {
+    /*display: inline-block;*/
+}
+
+.header_left {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header_left ul {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.header_left ul li {
+    height: 100%;
+}
+
+.header_left ul li a {
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    padding: 0 15px;
+    color: black;
+}
+
+.header_left ul li a:hover {
+    border-bottom: 1px solid deepskyblue;
+}
+
+.header_right {
+    background-color: transparent;
+}
+
+.header_right img {
+    height: 42px;
+    vertical-align: middle;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+
+.search input {
+    height: 42px;
+    width: 190px;
+    padding-left: 20px;
+    border: 1px solid deepskyblue;
+}
+
+.search button {
+    width: 50px;
+    height: 42px;
+    background: url("../images/ic_xue_search.png") no-repeat;
+    background-size: auto 42px;
+}
+
+/**/
+/**/
+/**/
+/**/
+.banner {
+    background: #1c036c url("../images/img_xue_banner.png") no-repeat top center;
+    height: 420px;
+}
+
+.bannerContent {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner_left {
+    width: 190px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.banner_left ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.banner_left li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.banner_left li a {
+    /*display: inline-block;*/
+    width: 100%;
+    color: white;
+}
+
+.banner_left li a span {
+    float: right;
+}
+
+.banner_left li a:hover {
+    color: deepskyblue;
+}
+.banner_right {
+    width: 228px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.banner_right ul{
+    flex: 1;
+}
+.banner_right ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+.banner_right ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.myclass {
+    height: 50px;
+    line-height: 50px;
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+}
+
+.allclass {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+    color: deepskyblue;
+    text-align: center;
+    border: 1px solid deepskyblue;
+    margin: 10px;
+}
+/**/
+/**/
+/**/
+/**/
+.goods{
+    height: 60px;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30px;
+    align-items: center;
+}
+.goods ul{
+    flex: 1;
+    display: flex;
+}
+.goods ul li{
+    padding-left: 30px;
+}
+.goods ul li a{
+    padding-left: 30px;
+}
+/**/
+/**/
+/**/
+/**/
+.recomment_hd{
+    display: flex;
+    justify-content: space-between;
+}
+.recomment_bd{
+    margin-top: 20px;
+}
+.recomment_bd ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.recomment_bd ul li{
+    width: 228px;
+    /*padding: 0 10px 10px 0;*/
+    /*margin-bottom: 10px;*/
+    margin: 0 0px 10px 0;
+    background-color: white ;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+.recomment_bd li img{
+    width: 100%;
+}
+.recomment_bd li span{
+    color: deepskyblue;
+}
+/**/
+/**/
+/**/
+/**/
+.footer{
+    background-color: white;
+    padding-top: 30px;
+    height: 190px;
+}
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+
+}
+.links ul{
+    margin-left: 50px;
+}
+.links ul li{
+    margin-top: 10px;
+}

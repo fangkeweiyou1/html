@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="get" id="get" style="width: 100px;height: 100px;background-color: red" onclick="get()">
+
+</div>
+<script type="text/javascript">
+    function get() {
+        var http=new XMLHttpRequest()
+        http.open("get","http://wanandroid.com/wxarticle/chapters/json")
+        http.send()
+        http.onload=function () {
+            console.log(http.responseText)
+        }
+        console.log('开始执行')
+//        $.ajax({
+//            url:"https://wanandroid.com/wxarticle/chapters/json"
+//            dataType: "json",
+//            type:"get",
+//            success:function (result) {
+//                console.log(result)
+//            },
+//            error:function (data) {
+//                console.log(data)
+//            }
+//        })
+    }
+</script>
+</body>
+</html>

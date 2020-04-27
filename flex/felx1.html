@@ -1,0 +1,1020 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        div {
+            margin-top: 2px;
+        }
+
+        body {
+            width: 600px;
+            margin: 0 auto;
+            background-color: #f3f5f7;
+            border: 1px solid red;
+        }
+
+        .item1 {
+            height: 40px;
+        }
+
+        .item1 ul {
+            display: flex;
+            height: 100%;
+        }
+
+        .item1 ul li {
+            flex: 1;
+            height: 100%;
+        }
+
+        .item1 ul li:nth-child(1) {
+            background-color: pink;
+        }
+
+        .item1 ul li:nth-child(2) {
+            background-color: red;
+        }
+
+        .item1 ul li:nth-child(3) {
+            background-color: yellow;
+        }
+
+        .item1 ul li:nth-child(4) {
+            background-color: green;
+        }
+
+        .item2 {
+            display: flex;
+            height: 40px;
+        }
+
+        .item2 span {
+            flex: 1;
+        }
+
+        .item2 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item2 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item2 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item2 span:nth-child(1) {
+            background-color: green;
+        }
+
+        .item3 {
+            display: flex;
+            height: 40px;
+            justify-content: space-around;
+        }
+
+        .item3 span {
+            width: 100px;
+        }
+
+        .item3 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item3 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item3 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item3 span:nth-child(1) {
+            background-color: green;
+        }
+
+        .item4 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            /*flex-direction: row;*/
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            flex-direction: column;
+        }
+
+        .item4 span {
+        }
+
+        .item4 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item4 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item4 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item4 span:nth-child(1) {
+            background-color: green;
+        }
+
+        .item5 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,默认从左到右*/
+            justify-content: flex-start;
+        }
+
+        .item5 span {
+        }
+
+        .item5 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item5 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item5 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item5 span:nth-child(1) {
+            background-color: green;
+        }
+
+        .item6 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,从右到左*/
+            justify-content: flex-end;
+        }
+
+        .item6 span {
+        }
+
+        .item6 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item6 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item6 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item6 span:nth-child(1) {
+            background-color: green;
+        }
+
+        .item7 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,居中*/
+            justify-content: center;
+        }
+
+        .item7 span {
+        }
+
+        .item7 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item7 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item7 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item7 span:nth-child(1) {
+            background-color: green;
+        }
+
+
+        .item8 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,分配剩余空间*/
+            justify-content: space-around;
+        }
+
+        .item8 span {
+        }
+
+        .item8 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item8 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item8 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item8 span:nth-child(1) {
+            background-color: green;
+        }
+
+        .item9 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,先两边贴边分配剩余空间*/
+            justify-content: space-between;
+        }
+
+        .item9 span {
+        }
+
+        .item9 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item9 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item9 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item9 span:nth-child(1) {
+            background-color: green;
+        }
+
+        .item10 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,先两边贴边分配剩余空间*/
+            /*justify-content: space-between;*/
+            flex-wrap: wrap;
+        }
+
+        .item10 span {
+            flex: 50%;
+        }
+
+        .item10 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item10 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item10 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item10 span:nth-child(1) {
+            background-color: green;
+        }
+        .item11 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,先两边贴边分配剩余空间*/
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .item11 span {
+            width: 40px;
+            height: 40px;
+        }
+
+        .item11 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item11 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item11 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item11 span:nth-child(1) {
+            background-color: green;
+        }
+
+        .item12 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,先两边贴边分配剩余空间*/
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .item12 span {
+            width: 40px;
+            height: 40px;
+        }
+
+        .item12 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item12 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item12 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item12 span:nth-child(1) {
+            background-color: green;
+        }
+
+        .item13 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,先两边贴边分配剩余空间*/
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+
+        .item13 span {
+            width: 40px;
+            height: 40px;
+        }
+
+        .item13 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item13 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item13 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item13 span:nth-child(1) {
+            background-color: green;
+        }
+
+        .item14 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,先两边贴边分配剩余空间*/
+            justify-content: center;
+            flex-wrap: wrap;
+            /*拉伸*/
+            align-items: stretch;
+        }
+
+        .item14 span {
+            width: 40px;
+            /*height: 40px;*/
+        }
+
+        .item14 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item14 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item14 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item14 span:nth-child(1) {
+            background-color: green;
+        }
+
+
+        .item15 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,先两边贴边分配剩余空间*/
+            justify-content: center;
+            flex-wrap: wrap;
+            /*拉伸*/
+            /*align-items: stretch;*/
+            /*多行排列方式*/
+            align-content: center;
+        }
+
+        .item15 span {
+            width: 50%;
+            /*height: 40px;*/
+        }
+
+        .item15 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item15 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item15 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item15 span:nth-child(1) {
+            background-color: green;
+        }
+
+        .item16 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,先两边贴边分配剩余空间*/
+            justify-content: center;
+            flex-wrap: wrap;
+            /*拉伸*/
+            /*align-items: stretch;*/
+            /*多行排列方式*/
+            align-content: flex-start;
+        }
+
+        .item16 span {
+            width: 50%;
+            /*height: 40px;*/
+        }
+
+        .item16 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item16 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item16 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item16 span:nth-child(1) {
+            background-color: green;
+        }
+
+        .item17 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,先两边贴边分配剩余空间*/
+            justify-content: center;
+            flex-wrap: wrap;
+            /*拉伸*/
+            /*align-items: stretch;*/
+            /*多行排列方式*/
+            align-content: flex-end;
+        }
+
+        .item17 span {
+            width: 50%;
+            /*height: 40px;*/
+        }
+
+        .item17 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item17 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item17 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item17 span:nth-child(1) {
+            background-color: green;
+        }
+        .item18 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,先两边贴边分配剩余空间*/
+            justify-content: center;
+            flex-wrap: wrap;
+            /*拉伸*/
+            /*align-items: stretch;*/
+            /*多行排列方式*/
+            align-content: stretch;
+        }
+
+        .item18 span {
+            width: 50%;
+            /*height: 40px;*/
+        }
+
+        .item18 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item18 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item18 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item18 span:nth-child(1) {
+            background-color: green;
+        }
+
+
+        .item19 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,先两边贴边分配剩余空间*/
+            justify-content: center;
+            flex-wrap: wrap;
+            /*拉伸*/
+            /*align-items: stretch;*/
+            /*多行排列方式*/
+            align-content: space-between;
+        }
+
+        .item19 span {
+            width: 50%;
+            /*height: 40px;*/
+        }
+
+        .item19 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item19 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item19 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item19 span:nth-child(1) {
+            background-color: green;
+        }
+
+
+
+        .item20 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,先两边贴边分配剩余空间*/
+            justify-content: center;
+            flex-wrap: wrap;
+            /*拉伸*/
+            /*align-items: stretch;*/
+            /*多行排列方式*/
+            align-content: space-around;
+        }
+
+        .item20 span {
+            width: 50%;
+            /*height: 40px;*/
+        }
+
+        .item20 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item20 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item20 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item20 span:nth-child(1) {
+            background-color: green;
+        }
+
+        .item21 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,先两边贴边分配剩余空间*/
+            justify-content: center;
+            flex-wrap: wrap;
+            /*拉伸*/
+            align-items: stretch;
+        }
+
+        .item21 span {
+            width: 50px;
+            height: 40px;
+        }
+
+        .item21 span:nth-child(2) {
+            background-color: pink;
+            /*针对自己排列方式 */
+            align-self: flex-end;
+        }
+
+        .item21 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item21 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item21 span:nth-child(1) {
+            background-color: green;
+        }
+
+        .item22 {
+            display: flex;
+            height: 100px;
+            /*默认X轴*/
+            flex-direction: row;
+            /*X轴翻转*/
+            /*flex-direction: row-reverse;*/
+            /*Y轴*/
+            /*flex-direction: column;*/
+            /*设置子元素排列方式,先两边贴边分配剩余空间*/
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .item22 span {
+            /*width: 50px;*/
+            height: 40px;
+            flex: 1;
+        }
+
+        .item22 span:nth-child(2) {
+            background-color: pink;
+        }
+
+        .item22 span:nth-child(3) {
+            background-color: red;
+        }
+
+        .item22 span:nth-child(4) {
+            background-color: yellow;
+        }
+
+        .item22 span:nth-child(1) {
+            background-color: green;
+        }
+
+
+    </style>
+    <title>flex第一讲</title>
+</head>
+<body>
+<!---->
+<!---->
+<!---->
+<div>flex针对子元素分配剩余空间分数</div>
+<div class="item22">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>aligh-self,针对子元素自己的排列方式</div>
+<div class="item21">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>aligh-content设置侧轴方向排列方式,对于多行</div>
+<div class="item20">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>aligh-content设置侧轴方向排列方式,对于多行</div>
+<div class="item19">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>aligh-content设置侧轴方向排列方式,对于多行</div>
+<div class="item18">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>aligh-content设置侧轴方向排列方式,对于多行</div>
+<div class="item17">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>aligh-content设置侧轴方向排列方式,对于多行</div>
+<div class="item16">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>aligh-content设置侧轴方向排列方式,对于多行</div>
+<div class="item15">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>aligh-items设置侧轴方向排列方式</div>
+<div class="item14">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>aligh-items设置侧轴方向排列方式</div>
+<div class="item13">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>aligh-items设置侧轴方向排列方式</div>
+<div class="item12">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>aligh-items设置侧轴方向排列方式</div>
+<div class="item11">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>flex默认是不换行的,flex-wrap设置侧轴方向,设置子元素排列方式</div>
+<div class="item10">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>justify-content设置主轴方向,设置子元素排列方式</div>
+<div class="item9">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>justify-content设置主轴方向,设置子元素排列方式</div>
+<div class="item8">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>justify-content设置主轴方向,设置子元素排列方式</div>
+<div class="item7">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>justify-content设置主轴方向,设置子元素排列方式</div>
+<div class="item6">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>justify-content设置主轴方向,设置子元素排列方式</div>
+<div class="item5">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>felx-direction设置主轴方向</div>
+<div class="item4">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>均匀占满宽度</div>
+<div class="item3">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>让所有弹性盒模型对象的子元素都有相同的长度，且忽略它们内部的内容：</div>
+<div class="item2">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+<!---->
+<!---->
+<!---->
+<div>让所有弹性盒模型对象的子元素都有相同的长度，且忽略它们内部的内容：</div>
+<div class="item1">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</div>
+<!--todo 当我们为父盒子设为flex布局以后,子元素的float,clear,vertical-align失效-->
+</body>
+</html>
