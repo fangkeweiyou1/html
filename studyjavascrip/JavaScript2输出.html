@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="outjs.js"></script>
+    <title>JavaScript 输出</title>
+</head>
+<body>
+<div class="content" onclick="windoAlert()">静态内容</div>
+<script>
+    /*todo 在 HTML 文档完全加载后使用 document.write() 将删除所有已有的 HTML */
+    function resetBodyContent() {
+        document.write(5 + 6);
+    }
+    function windoAlert() {
+        window.alert('系统级别的提示')
+    }
+</script>
+</body>
+</html>

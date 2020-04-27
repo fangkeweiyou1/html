@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript 数据类型</title>
+</head>
+<body>
+
+<script>
+
+    //"number"
+    console.log(typeof 1);
+    //string
+    console.log(typeof "1");
+    var person;
+    //undefined
+    console.log(typeof person);
+    var person2 = null;
+    //object
+    console.log(typeof person2);
+    var array=[1,2,3,4]
+    //object typeof 运算符把数组返回为 "object"，因为在 JavaScript 中数组即对象。
+    console.log(typeof array);
+
+    function test1() {
+        var length = 7;                             // 数字
+        var lastName = "Gates";                      // 字符串
+        var cars = ["Porsche", "Volvo", "BMW"];         // 数组
+        var x = {firstName: "Bill", lastName: "Gates"};    // 对象
+
+    }
+
+    function test2() {
+        var x;               // 现在 x 是 undefined
+        var x = 7;           // 现在 x 是数值
+        var x = "Bill";      // 现在 x 是字符串值
+    }
+
+    /*
+    JavaScript 布尔值
+     */
+    function test3() {
+        var x = true;
+        var y = false;
+    }
+
+    /*
+    JavaScript 数组
+JavaScript 数组用方括号书写。
+
+数组的项目由逗号分隔。
+     */
+    function test4() {
+        var cars = ["Porsche", "Volvo", "BMW"];
+    }
+
+    /*
+    JavaScript 对象
+JavaScript 对象用花括号来书写。
+
+对象属性是 name:value 对，由逗号分隔。
+     */
+    function test5() {
+        var person = {firstName: "Bill", lastName: "Gates", age: 62, eyeColor: "blue"};
+    }
+</script>
+
+</body>
+</html>

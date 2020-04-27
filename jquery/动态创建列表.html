@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+    <title>动态创建列表</title>
+</head>
+<body>
+<ul id="">
+    <li>窗前明月光</li>
+
+</ul>
+<script>
+    function getMsgInboxs() {
+
+    }
+
+    $(function () {
+        console.log("准备好了");
+        getMsgInboxs();
+        $.post("https://api.gim-allnet.com/api/mobile-v1/get.OrderNotification", {
+                page_id: '1',
+                records: '10',
+                member_id: '1476',
+                lang: 'cn'
+            },
+            function (data, status) {
+                console.log(data)
+//                var result = JSON.parse(data)
+//                var inboxMsgModelList = result.data.data
+                console.log("准备好了"+data.msg);
+//                inboxMsgModelList.for
+                for (var index; index < inboxMsgModelList.size; index++) {
+                    console.log("准备好了"+inboxMsgModelList.get(index).title);
+                }
+            });
+    });
+</script>
+</body>
+</html>

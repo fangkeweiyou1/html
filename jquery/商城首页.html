@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <title>商城首页</title>
+</head>
+<body>
+
+<!--banner图-->
+<div class="bannerGen"></div>
+
+<!--菜单栏-->
+<div class="menuGen"></div>
+
+<!--商品列表-->
+<div class="goodsGen"></div>
+
+<script>
+
+    $(function () {
+        console.log("document绘制完毕")
+        /*获取banner图信息*/
+        console.log("获取banner图信息")
+        $.get('https://apimall.asiajy.com/buyer/focus-pictures', {
+            client_type: "WAP"
+        }, function (data, status) {
+            /*
+            [{"id":20,"pic_url":"http://47.88.173.86:82/testShopImg/20200319/4F4CE7D528DE4D0393EE860C3D2D2DC0.jpeg","operation_type":"NONE","operation_param":"https://a5bmall.com/","operation_url":null,"client_type":"WAP","country_id":12},{"id":22,"pic_url":"http://47.88.173.86:82/testShopImg/20200319/A2187F8ECF1940FD82F4F6BC641C43DB.jpeg","operation_type":"URL","operation_param":"https://a5bmall.com/","operation_url":null,"client_type":"WAP","country_id":12}]
+            */
+            var bannerModelList=JSON.parse(JSON.stringify(data))
+            console.log("获取banner图信息:" +bannerModelList.get(0).pic_url)
+        })
+    })
+
+</script>
+
+</body>
+</html>
