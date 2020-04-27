@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        .one {
+            height: 600px;
+            width: 1300px;
+            background-color: red;
+        }
+
+        .two {
+            position: relative;
+            left: 0px;
+            top: 0px;
+            width: 1200px;
+            height: 500px;
+            background-color: green;
+        }
+
+        .three {
+            position: relative;
+            left: 200px;
+            top: 200px;
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+        }
+
+        .four {
+            position: absolute;
+            left: 300px;
+            top: 300px;
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+        }
+
+        .five {
+            width: 300px;
+            height: 300px;
+            background-color: deeppink;
+        }
+
+        .arrow_vessel {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 1200px;
+            height: 600px;
+            background-color: pink;
+            border: 5px solid green;
+        }
+
+        .arrow_left, .arrow_right, .arrow_lefttop, .arrow_rightbottom {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            background-color: red;
+        }
+
+        .arrow_left {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -25px;
+        }
+
+        .arrow_right {
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            margin-top: -25px;
+        }
+
+        .arrow_rightbottom {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .flex_vessel {
+            width: 1200px;
+            height: 3000px;
+            margin: 0 auto;
+            background-color: #00a4ff;
+        }
+
+        .flex {
+            position: fixed;
+            top: 100px;
+            left: 50%;
+            margin-left: 600px;
+            width: 50px;
+            height: 200px;
+            background-color: pink;
+        }
+        .topflex_vessel{
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            background-color: pink;
+            height: 50px;
+        }
+        .topflex {
+           background-color: white;
+            width: 1200px;
+            height: 50px;
+            margin: 0 auto;
+            box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+        }
+
+    </style>
+    <title>复习定位</title>
+</head>
+<body>
+
+<div class="one">有定位后,成为了行内块
+    <div class="two">
+        <div class="three">相对定位不脱标,相对于自己原来的位置移动</div>
+        <div class="four">绝对定位以带有定位(任何定位都行)的父级(或者是爷爷)来移动位置,父级没有定位以文档为准,并且脱标</div>
+        <div class="five"></div>
+    </div>
+</div>
+<div class="arrow_vessel">
+    <div class="arrow_left">←</div>
+    <div class="arrow_right">→</div>
+    <div class="arrow_lefttop">↖</div>
+    <div class="arrow_rightbottom">↘</div>
+</div>
+<div class="arrow_vessel">
+    <div class="arrow_left">←</div>
+    <div class="arrow_right">→</div>
+    <div class="arrow_lefttop">↖</div>
+    <div class="arrow_rightbottom">↘</div>
+</div>
+<div class="flex_vessel">
+    <div class="flex">
+        固定定位,只认浏览器,脱标
+    </div>
+</div>
+<div class="topflex_vessel">
+    <div class="topflex"></div>
+</div>
+</body>
+</html>
