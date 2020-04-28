@@ -41,11 +41,24 @@ WebApp全屏模式 隐藏地址栏。
             /*todo 禁用长按页面时的弹出菜单*/
             -webkit-touch-callout: none;
         }
+        /*TODO 限制body宽最大最小,并居中*/
+        body{
+            width: 100%;
+            min-width: 320px;
+            max-width: 640px;
+            margin: 0 auto;
+            font-size: 14px;
+            font-family: -apple-system,Helvetica,sans-serif;
+            color: #666666;
+            line-height: 1.5;
+            /*TODO X轴超出不允许显示*/
+            overflow-x: hidden;
+        }
     </style>
     <title>移动端布局</title>
 </head>
 <body>
-<div class="content" style="width: 375px;height: 300px;background-color: purple;padding: 20px;border: 10px solid red;">移动端布局</div>
+<div class="content" style="width: 100%;height: 300px;background-color: purple;padding: 20px;border: 10px solid red;color: white">移动端布局</div>
 
 </body>
 </html>
